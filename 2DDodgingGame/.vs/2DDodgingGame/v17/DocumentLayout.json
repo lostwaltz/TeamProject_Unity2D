@@ -1,0 +1,135 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\WorkSpace\\Unity\\TeamProject\\TeamProject_Unity2D\\2DDodgingGame\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{47413DA4-9CFC-C117-A61A-18A2A9317A23}|Assembly-CSharp.csproj|C:\\WorkSpace\\Unity\\TeamProject\\TeamProject_Unity2D\\2DDodgingGame\\assets\\scripts\\entites\\controller\\sideviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47413DA4-9CFC-C117-A61A-18A2A9317A23}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entites\\controller\\sideviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47413DA4-9CFC-C117-A61A-18A2A9317A23}|Assembly-CSharp.csproj|c:\\workspace\\unity\\teamproject\\teamproject_unity2d\\2ddodginggame\\assets\\scripts\\entites\\controller\\sideviewplayerinputcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47413DA4-9CFC-C117-A61A-18A2A9317A23}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entites\\controller\\sideviewplayerinputcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47413DA4-9CFC-C117-A61A-18A2A9317A23}|Assembly-CSharp.csproj|c:\\workspace\\unity\\teamproject\\teamproject_unity2d\\2ddodginggame\\assets\\scripts\\entites\\behaviors\\sideveiwmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47413DA4-9CFC-C117-A61A-18A2A9317A23}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entites\\behaviors\\sideveiwmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\WorkSpace\\Unity\\UnityLearning\\2D_Project\\2DTopDownShooting\\Assets\\Scripts\\Entites\\Controller\\TopDownAnimationController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\WorkSpace\\Unity\\UnityLearning\\2D_Project\\2DTopDownShooting\\Assets\\Scripts\\Entites\\Controller\\AnimationController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\WorkSpace\\Unity\\UnityLearning\\2D_Project\\2DTopDownStudy\\Assets\\Scripts\\TopDownRotationLook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\WorkSpace\\Unity\\UnityLearning\\2D_Project\\2DTopDownStudy\\Assets\\Scripts\\TopDownMovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SideViewPlayerInputController.cs",
+              "DocumentMoniker": "C:\\WorkSpace\\Unity\\TeamProject\\TeamProject_Unity2D\\2DDodgingGame\\Assets\\Scripts\\Entites\\Controller\\SideViewPlayerInputController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Entites\\Controller\\SideViewPlayerInputController.cs",
+              "ToolTip": "C:\\WorkSpace\\Unity\\TeamProject\\TeamProject_Unity2D\\2DDodgingGame\\Assets\\Scripts\\Entites\\Controller\\SideViewPlayerInputController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Entites\\Controller\\SideViewPlayerInputController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T09:45:30.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TopDownAnimationController.cs",
+              "DocumentMoniker": "C:\\WorkSpace\\Unity\\UnityLearning\\2D_Project\\2DTopDownShooting\\Assets\\Scripts\\Entites\\Controller\\TopDownAnimationController.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\UnityLearning\\2D_Project\\2DTopDownShooting\\Assets\\Scripts\\Entites\\Controller\\TopDownAnimationController.cs",
+              "ToolTip": "C:\\WorkSpace\\Unity\\UnityLearning\\2D_Project\\2DTopDownShooting\\Assets\\Scripts\\Entites\\Controller\\TopDownAnimationController.cs",
+              "RelativeToolTip": "..\\..\\..\\UnityLearning\\2D_Project\\2DTopDownShooting\\Assets\\Scripts\\Entites\\Controller\\TopDownAnimationController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T09:40:06.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AnimationController.cs",
+              "DocumentMoniker": "C:\\WorkSpace\\Unity\\UnityLearning\\2D_Project\\2DTopDownShooting\\Assets\\Scripts\\Entites\\Controller\\AnimationController.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\UnityLearning\\2D_Project\\2DTopDownShooting\\Assets\\Scripts\\Entites\\Controller\\AnimationController.cs",
+              "ToolTip": "C:\\WorkSpace\\Unity\\UnityLearning\\2D_Project\\2DTopDownShooting\\Assets\\Scripts\\Entites\\Controller\\AnimationController.cs",
+              "RelativeToolTip": "..\\..\\..\\UnityLearning\\2D_Project\\2DTopDownShooting\\Assets\\Scripts\\Entites\\Controller\\AnimationController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T09:39:38.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TopDownRotationLook.cs",
+              "DocumentMoniker": "C:\\WorkSpace\\Unity\\UnityLearning\\2D_Project\\2DTopDownStudy\\Assets\\Scripts\\TopDownRotationLook.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\UnityLearning\\2D_Project\\2DTopDownStudy\\Assets\\Scripts\\TopDownRotationLook.cs",
+              "ToolTip": "C:\\WorkSpace\\Unity\\UnityLearning\\2D_Project\\2DTopDownStudy\\Assets\\Scripts\\TopDownRotationLook.cs",
+              "RelativeToolTip": "..\\..\\..\\UnityLearning\\2D_Project\\2DTopDownStudy\\Assets\\Scripts\\TopDownRotationLook.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T09:30:59.232Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TopDownMovement.cs",
+              "DocumentMoniker": "C:\\WorkSpace\\Unity\\UnityLearning\\2D_Project\\2DTopDownStudy\\Assets\\Scripts\\TopDownMovement.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\UnityLearning\\2D_Project\\2DTopDownStudy\\Assets\\Scripts\\TopDownMovement.cs",
+              "ToolTip": "C:\\WorkSpace\\Unity\\UnityLearning\\2D_Project\\2DTopDownStudy\\Assets\\Scripts\\TopDownMovement.cs",
+              "RelativeToolTip": "..\\..\\..\\UnityLearning\\2D_Project\\2DTopDownStudy\\Assets\\Scripts\\TopDownMovement.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T09:18:51.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SideVeiwMovement.cs",
+              "DocumentMoniker": "C:\\WorkSpace\\Unity\\TeamProject\\TeamProject_Unity2D\\2DDodgingGame\\Assets\\Scripts\\Entites\\Behaviors\\SideVeiwMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Entites\\Behaviors\\SideVeiwMovement.cs",
+              "ToolTip": "C:\\WorkSpace\\Unity\\TeamProject\\TeamProject_Unity2D\\2DDodgingGame\\Assets\\Scripts\\Entites\\Behaviors\\SideVeiwMovement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Entites\\Behaviors\\SideVeiwMovement.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T09:14:06.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SideViewController.cs",
+              "DocumentMoniker": "C:\\WorkSpace\\Unity\\TeamProject\\TeamProject_Unity2D\\2DDodgingGame\\Assets\\Scripts\\Entites\\Controller\\SideViewController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Entites\\Controller\\SideViewController.cs",
+              "ToolTip": "C:\\WorkSpace\\Unity\\TeamProject\\TeamProject_Unity2D\\2DDodgingGame\\Assets\\Scripts\\Entites\\Controller\\SideViewController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Entites\\Controller\\SideViewController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T08:58:52.029Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
