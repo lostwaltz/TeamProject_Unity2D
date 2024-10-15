@@ -8,6 +8,8 @@ public class SideViewController : MonoBehaviour
     public event Action<Vector2> OnMoveEvent;
     public event Action OnAttackEvent;
 
+    private HealthSystem healthSystem;
+
     public Vector2 direction { get; private set; }
     protected bool isAttacking { get; set; }
     private float timeSinceLastAttack = float.MaxValue;
