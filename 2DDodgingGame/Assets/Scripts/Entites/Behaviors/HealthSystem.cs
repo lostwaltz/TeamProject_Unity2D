@@ -6,9 +6,6 @@ using System.Security.Cryptography;
 
 public class HealthSystem : MonoBehaviour
 {
-    public GameObject prefabsTest;
-
-
     [SerializeField] private float healthChangeDelay = 0.5f;
 
     private float timeSinceLastChange = float.MaxValue;
@@ -28,7 +25,6 @@ public class HealthSystem : MonoBehaviour
     private void Awake()
     {
         statHandler = GetComponent<CharacterStatsHandler>();
-
     }
 
     private void Start()
