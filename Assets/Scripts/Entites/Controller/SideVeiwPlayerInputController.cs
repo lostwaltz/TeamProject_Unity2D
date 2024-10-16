@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class SideViewPlayerInputController : SideViewController
+public class SideVeiwPlayerInputController : SideVeiwController
 {
     public void OnMove(InputValue inputValue)
     {

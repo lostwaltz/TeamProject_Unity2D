@@ -6,8 +6,6 @@ using System.Security.Cryptography;
 
 public class HealthSystem : MonoBehaviour
 {
-    public GameObject prefabsTest;
-
     [SerializeField] private float healthChangeDelay = 0.5f;
 
     private float timeSinceLastChange = float.MaxValue;
