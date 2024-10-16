@@ -19,7 +19,7 @@
       "RelativeMoniker": "D:0:0:{47413DA4-9CFC-C117-A61A-18A2A9317A23}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entites\\controller\\sideviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47413DA4-9CFC-C117-A61A-18A2A9317A23}|Assembly-CSharp.csproj|c:\\workspace\\unity\\teamproject\\teamproject_unity2d\\2ddodginggame\\assets\\scripts\\entites\\controller\\characteranimationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{47413DA4-9CFC-C117-A61A-18A2A9317A23}|Assembly-CSharp.csproj|C:\\WorkSpace\\Unity\\TeamProject\\TeamProject_Unity2D\\2DDodgingGame\\assets\\scripts\\entites\\controller\\characteranimationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{47413DA4-9CFC-C117-A61A-18A2A9317A23}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entites\\controller\\characteranimationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -66,9 +66,9 @@
               "Title": "HealthSystem.cs",
               "DocumentMoniker": "C:\\WorkSpace\\Unity\\TeamProject\\TeamProject_Unity2D\\2DDodgingGame\\Assets\\Scripts\\Entites\\Behaviors\\HealthSystem.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Entites\\Behaviors\\HealthSystem.cs",
-              "ToolTip": "C:\\WorkSpace\\Unity\\TeamProject\\TeamProject_Unity2D\\2DDodgingGame\\Assets\\Scripts\\Entites\\Behaviors\\HealthSystem.cs*",
-              "RelativeToolTip": "Assets\\Scripts\\Entites\\Behaviors\\HealthSystem.cs*",
-              "ViewState": "AgIAACYAAAAAAAAAAAAcwEQAAAANAAAAAAAAAA==",
+              "ToolTip": "C:\\WorkSpace\\Unity\\TeamProject\\TeamProject_Unity2D\\2DDodgingGame\\Assets\\Scripts\\Entites\\Behaviors\\HealthSystem.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Entites\\Behaviors\\HealthSystem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-15T13:49:03.428Z",
               "EditorCaption": ""
@@ -83,8 +83,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Entites\\Stats\\CharacterStatsHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvw0AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T13:11:57.746Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T13:11:57.746Z"
             },
             {
               "$type": "Document",
@@ -96,8 +95,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Entites\\Stats\\CharacterStat.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T13:10:03.377Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T13:10:03.377Z"
             },
             {
               "$type": "Document",
@@ -120,8 +118,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Entites\\Controller\\CharacterAnimationController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T11:40:18.938Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T11:40:18.938Z"
             },
             {
               "$type": "Document",
@@ -133,8 +130,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Entites\\Controller\\AnimationController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T11:40:17.518Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T11:40:17.518Z"
             },
             {
               "$type": "Document",
@@ -146,8 +142,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Entites\\Controller\\SideViewPlayerInputController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T09:45:30.97Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T09:45:30.97Z"
             },
             {
               "$type": "Document",
@@ -159,8 +154,7 @@
               "RelativeToolTip": "..\\..\\..\\UnityLearning\\2D_Project\\2DTopDownShooting\\Assets\\Scripts\\Entites\\Controller\\TopDownAnimationController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T09:40:06.839Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T09:40:06.839Z"
             },
             {
               "$type": "Document",
@@ -172,8 +166,7 @@
               "RelativeToolTip": "..\\..\\..\\UnityLearning\\2D_Project\\2DTopDownShooting\\Assets\\Scripts\\Entites\\Controller\\AnimationController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T09:39:38.427Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T09:39:38.427Z"
             },
             {
               "$type": "Document",
@@ -185,8 +178,7 @@
               "RelativeToolTip": "..\\..\\..\\UnityLearning\\2D_Project\\2DTopDownStudy\\Assets\\Scripts\\TopDownRotationLook.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T09:30:59.232Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T09:30:59.232Z"
             },
             {
               "$type": "Document",
@@ -198,8 +190,7 @@
               "RelativeToolTip": "..\\..\\..\\UnityLearning\\2D_Project\\2DTopDownStudy\\Assets\\Scripts\\TopDownMovement.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T09:18:51.406Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T09:18:51.406Z"
             },
             {
               "$type": "Document",
@@ -211,8 +202,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Entites\\Behaviors\\SideVeiwMovement.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAADwvyoAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T09:14:06.417Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T09:14:06.417Z"
             },
             {
               "$type": "Document",
@@ -224,8 +214,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Entites\\Controller\\SideViewController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T08:58:52.029Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T08:58:52.029Z"
             }
           ]
         }
