@@ -17,7 +17,7 @@ public class FireBalls : MonoBehaviour
         if (collision.CompareTag("Ground"))
         {
             Destroy(this.gameObject, 1f);
-            isDestroy = true;
+            animator.SetBool("isDestroy", true);
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
         }
     }
