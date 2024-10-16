@@ -9,7 +9,7 @@ public class FireBalls : MonoBehaviour
 
     private void Awake()
     {
-        animator = GetComponent<Animator>();
+        animator = GetComponentInChildren<Animator>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -17,7 +17,7 @@ public class FireBalls : MonoBehaviour
         if (collision.CompareTag("Ground"))
         {
             Destroy(this.gameObject, 1f);
-            isDestroy = true;
+            animator.SetBool("isDestroy", true);
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
         }
     }
