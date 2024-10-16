@@ -2,9 +2,12 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
-public class SideVeiwMovement : MonoBehaviour
+public class SideViewMovement : MonoBehaviour
 {
+    private PhotonView photonView;
+
 
     private Vector2 direction = Vector2.zero;
 
@@ -23,10 +26,14 @@ public class SideVeiwMovement : MonoBehaviour
         spriteRenderer = gameObject.GetComponentInChildren<SpriteRenderer>();
         statHandler =  GetComponent<CharacterStatsHandler>();
         healthSystem = GetComponent<HealthSystem>();
+        photonView = GetComponent<PhotonView>();
     }
 
     private void Start()
     {
+        if (!photonView.IsMine)
+            return;
+
         controller.OnMoveEvent += Move;
     }
 
@@ -42,8 +49,18 @@ public class SideVeiwMovement : MonoBehaviour
 
     private void Move(Vector2 _direction)
     {
-        spriteRenderer.flipX = controller.direction.x < 0;
-
         direction = _direction;
+
+        bool isFilpX = controller.direction.x < 0;
+
+        photonView.RPC("FlipXRPC", RpcTarget.All, isFilpX); 
+    }
+
+    [PunRPC]
+    private void FlipXRPC(bool isFlipX)
+    {
+        spriteRenderer.flipX = isFlipX;
+
+        Debug.Log(controller.direction.x < 0);
     }
 }

@@ -62,5 +62,13 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     public override void OnJoinedRoom()
     {
         Debug.Log("방에 참가하였습니다!");
+
+        SpawnLocalPlayer("PlayerBlueVariant");
+    }
+
+
+    public  void SpawnLocalPlayer(string prefabName)
+    {
+        PhotonNetwork.Instantiate("Prefabs/Player/" + prefabName, new Vector3(0, 0, 0), Quaternion.identity);
     }
 }

@@ -1,3 +1,4 @@
+using Photon.Pun;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -14,15 +15,21 @@ public class CharacterAnimationController : AnimationController
 
     private HealthSystem healthSystem;
 
+    private PhotonView photonView;
+
     protected override void Awake()
     {
         base.Awake();
         statHandler = GetComponent<CharacterStatsHandler>();
         healthSystem = GetComponent<HealthSystem>();
+        photonView = GetComponent<PhotonView>();
     }
 
     private void Start()
     {
+        if (!photonView.IsMine)
+            return;
+
         controller.OnMoveEvent += Move;
         healthSystem.OnDamage += Hit;
         healthSystem.OninvinciblilityEnd += InvincilbilityEnd;

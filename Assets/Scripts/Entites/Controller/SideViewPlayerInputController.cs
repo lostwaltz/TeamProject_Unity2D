@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class SideVeiwPlayerInputController : SideVeiwController
+public class SideViewPlayerInputController : SideVeiwController
 {
+
     public void OnMove(InputValue inputValue)
     {
         OnCallMoveEvent(inputValue.Get<Vector2>());
