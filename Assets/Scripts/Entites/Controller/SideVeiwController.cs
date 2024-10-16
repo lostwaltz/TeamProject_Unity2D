@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SideViewController : MonoBehaviour
+public class SideVeiwController : MonoBehaviour
 {
     public event Action<Vector2> OnMoveEvent;
     public event Action OnAttackEvent;

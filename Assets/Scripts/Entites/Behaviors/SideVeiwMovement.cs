@@ -8,7 +8,7 @@ public class SideVeiwMovement : MonoBehaviour
 
     private Vector2 direction = Vector2.zero;
 
-    private SideViewController controller;
+    private SideVeiwController controller;
     private Rigidbody2D movementRigidbody2D;
     private SpriteRenderer spriteRenderer;
     private CharacterStatsHandler statHandler;
@@ -18,7 +18,7 @@ public class SideVeiwMovement : MonoBehaviour
 
     private void Awake()
     {
-        controller = GetComponent<SideViewController>();
+        controller = GetComponent<SideVeiwController>();
         movementRigidbody2D = gameObject.GetComponent<Rigidbody2D>();
         spriteRenderer = gameObject.GetComponentInChildren<SpriteRenderer>();
         statHandler =  GetComponent<CharacterStatsHandler>();

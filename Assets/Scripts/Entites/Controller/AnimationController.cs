@@ -5,11 +5,11 @@ using UnityEngine;
 public class AnimationController : MonoBehaviour
 {
     protected Animator animator;
-    protected SideViewController controller;
+    protected SideVeiwController controller;
 
     protected virtual void Awake()
     {
         animator = GetComponentInChildren<Animator>();
-        controller = GetComponent<SideViewController>();
+        controller = GetComponent<SideVeiwController>();
     }
 }
