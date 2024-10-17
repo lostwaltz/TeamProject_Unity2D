@@ -7,6 +7,7 @@ public class SideVeiwController : MonoBehaviour
 {
     public event Action<Vector2> OnMoveEvent;
     public event Action OnAttackEvent;
+    public event Action OnJumpEvent;
 
     private HealthSystem healthSystem;
 
@@ -39,5 +40,10 @@ public class SideVeiwController : MonoBehaviour
     public void OnCallAttackEvent()
     {
         OnAttackEvent?.Invoke();
+    }
+
+    public void OnCallJumpEvent()
+    {
+        OnJumpEvent?.Invoke();
     }
 }
