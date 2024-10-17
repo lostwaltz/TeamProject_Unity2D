@@ -5,38 +5,37 @@ using UnityEngine;
 public class Monster : MonoBehaviour
 {
     public float MonsterSpeed;
-    Collider2D collider;
     HealthSystem healthSystem;
     Rigidbody2D rgbd;
     float randomMove;
     SpriteRenderer spriteRenderer;
     Animator animator;
+    Collider2D collider;
 
     private void Awake()
     {
-        collider = GetComponent<Collider2D>();
         rgbd = GetComponent<Rigidbody2D>();
-        healthSystem = GetComponent<HealthSystem>();
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
-        animator = GetComponent<Animator>();    
+        animator = GetComponent<Animator>();
+        collider = GetComponentInChildren<Collider2D>();
         Invoke("RandomMove", 3);
     }
 
-    //ÇÇ°İ½Ã ÇÃ·¹ÀÌ¾î Ã¼·Â°¨¼Ò
+    //ì²˜ë¦¬ë¡œì§
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collider.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
-            healthSystem.ChangeHealth(-1f);
-
             if (transform.position.y < collision.transform.position.y)
             {
                 MonsterDamaged();
+                return;
             }
+            collision.gameObject.GetComponent<HealthSystem>().ChangeHealth(-1f);
         }
     }
 
-    //¸ó½ºÅÍ AI ±¸Çö ·£´ıÇÑ ÁÂ¿ì ¿òÁ÷ÀÓ ÇÃ·¹ÀÌ¾î¿¡°Ô ÇâÇÏ°Ô µÇ¸é ³Ê¹« ¾î·Á¿öÁú µí
+    //ëª¬ìŠ¤í„° ì›€ì§ì„
     private void RandomMove()
     {
         randomMove = Random.Range(-1, 2);
@@ -57,13 +56,12 @@ public class Monster : MonoBehaviour
         }
     }
 
-    //·£´ı ¿òÁ÷ÀÓÀ» ±¸ÇöÇÑ °ÍÀ» ¼Óµµ·Î Àû¿ë½ÃÅ´
     private void FixedUpdate()
     {
         rgbd.velocity = new Vector2(randomMove * MonsterSpeed, 0);
     }
 
-    //»ç¸Á·ÎÁ÷
+    //ì‚¬ë§ë¡œì§
     public void MonsterDamaged()
     {
         spriteRenderer.color = new Color(1, 1, 1, 0.4f);
@@ -71,5 +69,6 @@ public class Monster : MonoBehaviour
         collider.enabled = false;
         rgbd.AddForce(Vector2.up * 5,ForceMode2D.Impulse);
         Destroy(gameObject,5);
+        rgbd.constraints = RigidbodyConstraints2D.FreezePositionX;
     }
 }

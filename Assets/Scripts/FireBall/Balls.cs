@@ -37,7 +37,7 @@ public abstract class Balls : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            healthSystem.ChangeHealth(-1);
+            collision.gameObject.GetComponent<HealthSystem>().ChangeHealth(-1);
         }
     }   
 }

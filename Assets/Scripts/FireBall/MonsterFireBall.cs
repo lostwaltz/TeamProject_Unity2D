@@ -21,6 +21,5 @@ public class MonsterFireBall : Balls
         
         int randomMonster = Random.Range(0, monsterPrefabs.Length);
         Instantiate(monsterPrefabs[randomMonster], collisionPoint,Quaternion.identity);
-        Debug.LogError(collisionPoint);
     }
 }
