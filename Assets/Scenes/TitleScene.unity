@@ -1024,9 +1024,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1045806975}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42b2de13962c1ac429204ba75e83933f, type: 3}
+  m_Script: {fileID: 11500000, guid: 05b55473e2993ea469febdbaba6319a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  easyClip: {fileID: 0}
+  normalClip: {fileID: 0}
+  hardClip: {fileID: 0}
+  button_Click_Clip: {fileID: 0}
 --- !u!4 &1045806977
 Transform:
   m_ObjectHideFlags: 0
