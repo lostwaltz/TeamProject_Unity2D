@@ -27,7 +27,6 @@ public class LevelManager : MonoBehaviour
 
     private void Awake()
     {
-        Debug.Log(isEasy);
         if(Instance == null)
         {
             Instance = this;
