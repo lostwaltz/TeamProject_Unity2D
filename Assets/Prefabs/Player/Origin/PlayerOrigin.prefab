@@ -257,7 +257,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3331206790436552643}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d879b3fd9dc29c4d998c3929de1e537, type: 3}
+  m_Script: {fileID: 11500000, guid: e6a79f414b2189a47a9a06f9568e93d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &8854049321375331638
@@ -301,6 +301,7 @@ MonoBehaviour:
     statsChangeType: 2
     maxHealth: 3
     speed: 1
+    jumpPower: 0
   statModifiers: []
 --- !u!114 &7438352033058018857
 MonoBehaviour:
