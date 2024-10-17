@@ -6,19 +6,23 @@ public class AudioManager : MonoBehaviour
 {
     public static AudioManager instance;
 
-    private AudioSource audioSource;
+    [SerializeField] private AudioClip clip;
+
+    public AudioSource audioSource;
 
     private void Awake()
     {
         if (instance == null)
             instance = this;
 
+        DontDestroyOnLoad(gameObject);
         audioSource = GetComponent<AudioSource>();
     }
 
     // Start is called before the first frame update
     void Start()
     {
+        audioSource.clip = clip;
         audioSource.Play();
     }
 
