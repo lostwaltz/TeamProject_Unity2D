@@ -14,14 +14,16 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private float smallFireBall_Speed = 0.05f;
     [SerializeField] private float monsterFireBall_Speed = 1f;
 
-    private float smallFireBall_Spawn_Speed = 1f;
-    private float fireball_Spewn_Speed = 0.8f;
-    private float monsterFireBall_Spewn_Spawn_Speed = 0.5f;
+    private float esay_Spawn_Speed = 1f;
+    private float normal_Spewn_Speed = 0.8f;
+    private float hard_Spewn_Spawn_Speed = 0.5f;
 
-    private bool isEasy = true;
-    private bool isNormal = false;
-    private bool isHard = false;
+    public static bool isEasy = false;
+    public static bool isNormal = false;
+    public static bool isHard = false;
 
+    private float first_LevelUp_Time = 15f;
+    private float Second_LevelUp_Time = 30f;
     private float time = 0;
 
     private void Awake()
@@ -42,6 +44,11 @@ public class LevelManager : MonoBehaviour
         //InvokeRepeating("MakeMonsterFireBall", 0.5f, 1f);
     }
 
+    private void Update()
+    {
+        time += Time.deltaTime;
+    }
+
     private void LevelFireSpawn()
     {
         if (isEasy)
@@ -50,11 +57,11 @@ public class LevelManager : MonoBehaviour
         }
         else if (isNormal)
         {
-
+            StartCoroutine(NromalLevel());
         }
         else if (isHard)
         {
-
+            StartCoroutine(HardLevel());
         }
     }
 
@@ -89,14 +96,85 @@ public class LevelManager : MonoBehaviour
     {
         while (isEasy)
         {
-            time += 1;
             MakeSmallFireBall();
-            Debug.Log(time);
-            if (time > 10)
+
+            if (time > first_LevelUp_Time)
             {
+                MakeSmallFireBall();
                 MakeFireBall();
             }
-            yield return new WaitForSeconds(smallFireBall_Spawn_Speed);
+
+            if (time > Second_LevelUp_Time)
+            {
+                MakeSmallFireBall();
+                MakeFireBall();
+                esay_Spawn_Speed = esay_Spawn_Speed / 2f;
+                if (esay_Spawn_Speed <= 0.25f)
+                {
+                    esay_Spawn_Speed = 0.25f;
+                }
+                time = 0;
+            }
+            yield return new WaitForSeconds(esay_Spawn_Speed);
+        }
+    }
+
+    IEnumerator NromalLevel()
+    {
+        while (isNormal)
+        {
+            MakeSmallFireBall();
+            MakeFireBall();
+
+            if (time > first_LevelUp_Time)
+            {
+                MakeSmallFireBall();
+                MakeFireBall();
+            }
+
+            if (time > Second_LevelUp_Time)
+            {
+                MakeSmallFireBall();
+                MakeFireBall();
+                MakeMonsterFireBall();
+                normal_Spewn_Speed = normal_Spewn_Speed / 2f;
+                if (normal_Spewn_Speed <= 0.2f)
+                {
+                    normal_Spewn_Speed = 0.2f;
+                }
+                time = 0;
+            }
+            yield return new WaitForSeconds(normal_Spewn_Speed);
+        }
+    }
+
+    IEnumerator HardLevel()
+    {
+        while (isHard)
+        {
+            MakeSmallFireBall();
+            MakeFireBall();
+
+            if (time > first_LevelUp_Time)
+            {
+                MakeSmallFireBall();
+                MakeFireBall();
+                MakeMonsterFireBall();
+            }
+
+            if (time > Second_LevelUp_Time)
+            {
+                MakeSmallFireBall();
+                MakeFireBall();
+                MakeMonsterFireBall();
+                hard_Spewn_Spawn_Speed = hard_Spewn_Spawn_Speed / 2f;
+                if (hard_Spewn_Spawn_Speed <= 0.125f)
+                {
+                    hard_Spewn_Spawn_Speed = 0.125f;
+                }
+                time = 0;
+            }
+            yield return new WaitForSeconds(hard_Spewn_Spawn_Speed);
         }
     }
 }
