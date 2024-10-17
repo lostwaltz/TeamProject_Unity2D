@@ -29,7 +29,7 @@ public class Monster : MonoBehaviour
         {
             healthSystem.ChangeHealth(-1f);
 
-            if (collision.rigidbody.velocity.y < 0f && transform.position.y < collision.transform.position.y)
+            if (transform.position.y < collision.transform.position.y)
             {
                 MonsterDamaged();
             }
