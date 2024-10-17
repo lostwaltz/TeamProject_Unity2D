@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6033680562612870973}
   - component: {fileID: 4203105638296883194}
   - component: {fileID: 1158343257351845830}
+  - component: {fileID: 6098010294721338895}
   m_Layer: 6
   m_Name: MainSprite
   m_TagString: Untagged
@@ -106,6 +107,30 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6098010294721338895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899356184670174427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b8c4a61274f60b4ea5fb4299cfdbf14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowLayerWeightsInspector: 1
+  ShowParameterInspector: 1
+  m_SynchronizeParameters:
+  - Type: 4
+    SynchronizeType: 1
+    Name: isWalking
+  - Type: 4
+    SynchronizeType: 1
+    Name: isHit
+  m_SynchronizeLayers:
+  - SynchronizeType: 0
+    LayerIndex: 0
 --- !u!1 &3331206790436552643
 GameObject:
   m_ObjectHideFlags: 0
@@ -123,6 +148,8 @@ GameObject:
   - component: {fileID: 7047087580266613413}
   - component: {fileID: 8854049321375331638}
   - component: {fileID: 8346350077152219921}
+  - component: {fileID: 6754732520298592923}
+  - component: {fileID: 7491158130884346860}
   m_Layer: 6
   m_Name: PlayerOrigin
   m_TagString: MainCamera
@@ -296,7 +323,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01cec636e84414148a4c20a017115088, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabsTest: {fileID: 0}
   healthChangeDelay: 0.5
 --- !u!114 &8346350077152219921
 MonoBehaviour:
@@ -315,3 +341,43 @@ MonoBehaviour:
     maxHealth: 3
     speed: 1
   statModifiers: []
+--- !u!114 &6754732520298592923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3331206790436552643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 0
+  ObservedComponents:
+  - {fileID: 7491158130884346860}
+  - {fileID: 6098010294721338895}
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &7491158130884346860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3331206790436552643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 0
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
