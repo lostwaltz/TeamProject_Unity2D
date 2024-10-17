@@ -17,7 +17,7 @@ public class Monster : MonoBehaviour
         collider = GetComponent<Collider2D>();
         rgbd = GetComponent<Rigidbody2D>();
         healthSystem = GetComponent<HealthSystem>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         animator = GetComponent<Animator>();    
         Invoke("RandomMove", 3);
     }
@@ -29,7 +29,7 @@ public class Monster : MonoBehaviour
         {
             healthSystem.ChangeHealth(-1f);
 
-            if (collision.rigidbody.velocity.y < 0f && transform.position.y < collision.transform.position.y)
+            if (transform.position.y < collision.transform.position.y)
             {
                 MonsterDamaged();
             }

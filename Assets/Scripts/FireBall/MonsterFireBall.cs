@@ -2,37 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MonsterFireBall : FireBalls
+public class MonsterFireBall : Balls
 {
     [SerializeField] GameObject[] monsterPrefabs;
 
     Collider2D collider;
-    Animator animator;
-    Rigidbody2D rgbd;
+    HealthSystem healthSystem;
 
     private void Awake()
     {
         base.Awake();
-    }
+        collider = GetComponent<Collider2D>(); 
+    } 
 
-    protected override void OnTriggerEnter2D(Collider2D collision)
+    protected override void OnTriggerEffect(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Ground"))
-        {         
-            int randomMonster = Random.Range(0, monsterPrefabs.Length);
-            Instantiate(monsterPrefabs[randomMonster]);
-        }
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
+        Vector3 collisionPoint = new Vector3 (gameObject.transform.position.x, collision.transform.position.y, collision.transform.position.z);
         
+        int randomMonster = Random.Range(0, monsterPrefabs.Length);
+        Instantiate(monsterPrefabs[randomMonster], collisionPoint,Quaternion.identity);
+        Debug.LogError(collisionPoint);
     }
 }
