@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 7438352033058018857}
   m_Layer: 6
   m_Name: PlayerOrigin
-  m_TagString: MainCamera
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
