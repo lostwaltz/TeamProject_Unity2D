@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class Monster : MonoBehaviour
 {
-    public int MonsterSpeed;
+    public float MonsterSpeed;
     Collider2D collider;
     HealthSystem healthSystem;
     Rigidbody2D rgbd;
     float randomMove;
     SpriteRenderer spriteRenderer;
-    bool isRun;
     Animator animator;
 
     private void Awake()
@@ -45,6 +44,7 @@ public class Monster : MonoBehaviour
         if(randomMove > 0)
         {
             spriteRenderer.flipX = true;
+            animator.SetBool("isRun",true);
         }
         if(randomMove == 0)
         {
@@ -53,6 +53,7 @@ public class Monster : MonoBehaviour
         if (randomMove < 0)
         {
             spriteRenderer.flipX=false;
+            animator.SetBool("isRun", true);
         }
     }
 

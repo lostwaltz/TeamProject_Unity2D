@@ -11,13 +11,13 @@ public class FireBalls : MonoBehaviour
     Rigidbody2D rgbd;
     HealthSystem healthSystem;
 
-    private void Awake()
+    protected virtual void Awake()
     {
         animator = GetComponentInChildren<Animator>();
         rgbd = GetComponent<Rigidbody2D>();
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    protected virtual void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
