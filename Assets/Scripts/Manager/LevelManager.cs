@@ -18,15 +18,16 @@ public class LevelManager : MonoBehaviour
     private float fireball_Spewn_Speed = 0.8f;
     private float monsterFireBall_Spewn_Spawn_Speed = 0.5f;
 
-    private bool isEasy = true;
-    private bool isNormal = false;
-    private bool isHard = false;
+    public static bool isEasy = false;
+    public static bool isNormal = false;
+    public static bool isHard = false;
 
     private float levelUp_Time = 10f;
     private float time = 0;
 
     private void Awake()
     {
+        Debug.Log(isEasy);
         if(Instance == null)
         {
             Instance = this;
