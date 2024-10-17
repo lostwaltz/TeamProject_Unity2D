@@ -44,5 +44,7 @@ public class SideViewMovement : MonoBehaviour
         direction = _direction;
 
         bool isFilpX = controller.direction.x < 0;
+
+        spriteRenderer.flipX = isFilpX;
     }
 }
