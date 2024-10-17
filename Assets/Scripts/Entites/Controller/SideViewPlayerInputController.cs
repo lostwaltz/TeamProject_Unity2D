@@ -5,6 +5,10 @@ using UnityEngine.InputSystem;
 
 public class SideViewPlayerInputController : SideVeiwController
 {
+    public void OnJump()
+    {
+        OnCallJumpEvent();
+    }
 
     public void OnMove(InputValue inputValue)
     {

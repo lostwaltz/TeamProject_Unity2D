@@ -27,7 +27,10 @@ public class SideViewMovement : MonoBehaviour
     private void Start()
     {
         controller.OnMoveEvent += Move;
+        controller.OnJumpEvent += Jump;
     }
+
+
 
     private void FixedUpdate()
     {
@@ -36,7 +39,9 @@ public class SideViewMovement : MonoBehaviour
 
     private void ApplyDirectionMove()
     {
-        movementRigidbody2D.velocity = direction * statSpeed * (healthSystem.IsAttacked ? 0 : 1);
+        Vector2 currentVelocity = movementRigidbody2D.velocity;
+        currentVelocity.x = (direction * statSpeed * (healthSystem.IsAttacked ? 0 : 1)).x;
+        movementRigidbody2D.velocity = currentVelocity;
     }
 
     private void Move(Vector2 _direction)
@@ -46,5 +51,12 @@ public class SideViewMovement : MonoBehaviour
         bool isFilpX = controller.direction.x < 0;
 
         spriteRenderer.flipX = isFilpX;
+    }
+
+    private void Jump()
+    {
+        Debug.Log("มกวม");
+
+        movementRigidbody2D.AddForce(Vector2.up * 20f, ForceMode2D.Impulse);
     }
 }
