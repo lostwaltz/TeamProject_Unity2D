@@ -60,7 +60,5 @@ public class SideViewMovement : MonoBehaviour
     private void FlipXRPC(bool isFlipX)
     {
         spriteRenderer.flipX = isFlipX;
-
-        Debug.Log(controller.direction.x < 0);
     }
 }
