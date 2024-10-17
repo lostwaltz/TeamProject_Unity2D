@@ -149,7 +149,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1352987499}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06e4fb582defe9a4089360e5e5480a7f, type: 3}
+  m_Script: {fileID: 11500000, guid: b891bbe130b4ed5439c9ddc0199fc475, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fireBall: {fileID: 4088571098289878915, guid: 3a2fea0ddb510ee4e8e55e8df02e3d35, type: 3}
@@ -403,6 +403,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2150686539454318172, guid: 36c976072b00be640aa1afee51957d05, type: 3}
+      propertyPath: baseStat.jumpPower
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 3103593138134460291, guid: 36c976072b00be640aa1afee51957d05, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -446,6 +450,10 @@ PrefabInstance:
     - target: {fileID: 4626927186375551630, guid: 36c976072b00be640aa1afee51957d05, type: 3}
       propertyPath: m_Name
       value: PlayerBlueVariant
+      objectReference: {fileID: 0}
+    - target: {fileID: 4626927186375551630, guid: 36c976072b00be640aa1afee51957d05, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

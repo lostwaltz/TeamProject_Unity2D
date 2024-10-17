@@ -21,20 +21,6 @@ public class Monster : MonoBehaviour
         Invoke("RandomMove", 3);
     }
 
-    //처리로직
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            if (transform.position.y < collision.transform.position.y)
-            {
-                MonsterDamaged();
-                return;
-            }
-            collision.gameObject.GetComponent<HealthSystem>().ChangeHealth(-1f);
-        }
-    }
-
     //몬스터 움직임
     private void RandomMove()
     {
