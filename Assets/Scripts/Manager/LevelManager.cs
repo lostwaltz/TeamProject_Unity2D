@@ -46,8 +46,7 @@ public class LevelManager : MonoBehaviour
     {
         if (isEasy)
         {
-            StartCoroutine(SpawnSmallFireBall());
-            StartCoroutine(SpawnFireBall());
+            StartCoroutine(EasyLevel());
         }
         else if (isNormal)
         {
@@ -86,37 +85,18 @@ public class LevelManager : MonoBehaviour
         go.transform.position += Vector3.down * monsterFireBall_Speed;
     }
 
-    //IEnumerator EasyLevel()
-    //{
-    //    while (isEasy)
-    //    {
-    //        time += 1;
-    //        MakeSmallFireBall();
-    //        Debug.Log(time);
-    //        if (time > 10)
-    //        {
-    //            MakeFireBall();
-    //        }
-    //        yield return new WaitForSeconds(1f);
-    //    }
-    //}
-
-    IEnumerator SpawnSmallFireBall()
+    IEnumerator EasyLevel()
     {
-        while(isEasy)
+        while (isEasy)
         {
             time += 1;
             MakeSmallFireBall();
+            Debug.Log(time);
+            if (time > 10)
+            {
+                MakeFireBall();
+            }
             yield return new WaitForSeconds(smallFireBall_Spawn_Speed);
-        }
-    }
-
-    IEnumerator SpawnFireBall()
-    {
-        while (time > 10)
-        {
-            MakeFireBall();
-            yield return new WaitForSeconds(fireball_Spewn_Speed);
         }
     }
 }
