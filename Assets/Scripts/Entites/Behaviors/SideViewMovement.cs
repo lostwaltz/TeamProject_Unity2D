@@ -13,6 +13,8 @@ public class SideViewMovement : MonoBehaviour
     private CharacterStatsHandler statHandler;
     private HealthSystem healthSystem;
 
+    private bool isGround = true;
+
     private float statSpeed => statHandler.CurrentStat.speed;
 
     private void Awake()
@@ -29,8 +31,6 @@ public class SideViewMovement : MonoBehaviour
         controller.OnMoveEvent += Move;
         controller.OnJumpEvent += Jump;
     }
-
-
 
     private void FixedUpdate()
     {
@@ -55,8 +55,22 @@ public class SideViewMovement : MonoBehaviour
 
     private void Jump()
     {
-        Debug.Log("มกวม");
+        if (false == isGround)
+            return;
 
-        movementRigidbody2D.AddForce(Vector2.up * 20f, ForceMode2D.Impulse);
+        movementRigidbody2D.AddForce(Vector2.up * statHandler.CurrentStat.jumpPower, ForceMode2D.Impulse);
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+            isGround = true;
+    }
+
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+            isGround = false;
     }
 }

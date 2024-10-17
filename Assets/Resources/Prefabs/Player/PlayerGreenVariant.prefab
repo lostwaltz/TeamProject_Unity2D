@@ -72,6 +72,10 @@ PrefabInstance:
       propertyPath: baseStat.speed
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 8346350077152219921, guid: 478094da88e08114fbe4432f8e31f4f4, type: 3}
+      propertyPath: baseStat.jumpPower
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
