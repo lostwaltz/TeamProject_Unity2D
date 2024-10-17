@@ -121,8 +121,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monsterPrefabs:
   - {fileID: 7664814198424431288, guid: f103cc80fa7ce1e4b9f011c54a54d3b4, type: 3}
-  - {fileID: 747033247017102367, guid: 40a4fc129e501ca458835c78f13307ba, type: 3}
   - {fileID: 3511470560675149107, guid: 900eff338cea5eb4f8ac76f102b721b5, type: 3}
+  - {fileID: 747033247017102367, guid: 40a4fc129e501ca458835c78f13307ba, type: 3}
 --- !u!1 &529511795744697458
 GameObject:
   m_ObjectHideFlags: 0

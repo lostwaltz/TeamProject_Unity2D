@@ -19,7 +19,7 @@ public class LevelManager : MonoBehaviour
     private float hard_Spewn_Spawn_Speed = 0.5f;
 
     public static bool isEasy = false;
-    public static bool isNormal = false;
+    public static bool isNormal = true;
     public static bool isHard = false;
 
     private float first_LevelUp_Time = 15f;
@@ -57,7 +57,7 @@ public class LevelManager : MonoBehaviour
         }
         else if (isNormal)
         {
-            StartCoroutine(NromalLevel());
+            StartCoroutine(NormalLevel());
         }
         else if (isHard)
         {
@@ -119,7 +119,7 @@ public class LevelManager : MonoBehaviour
         }
     }
 
-    IEnumerator NromalLevel()
+    IEnumerator NormalLevel()
     {
         while (isNormal)
         {

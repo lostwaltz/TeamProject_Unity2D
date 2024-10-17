@@ -59,6 +59,18 @@ public class SideViewMovement : MonoBehaviour
             return;
 
         movementRigidbody2D.AddForce(Vector2.up * statHandler.CurrentStat.jumpPower, ForceMode2D.Impulse);
+<<<<<<< Updated upstream
+=======
+    }
+    private void DoubleJump()
+    {
+        Vector2 currentVelocity = movementRigidbody2D.velocity;
+        currentVelocity.y = 0f;
+
+        movementRigidbody2D.velocity = currentVelocity;
+
+        movementRigidbody2D.AddForce(Vector2.up * (statHandler.CurrentStat.jumpPower * 0.8f), ForceMode2D.Impulse);
+>>>>>>> Stashed changes
     }
 
     private void OnCollisionStay2D(Collision2D collision)

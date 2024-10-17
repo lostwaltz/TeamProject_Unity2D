@@ -554,7 +554,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a2fea0ddb510ee4e8e55e8df02e3d35, type: 3}
---- !u!1001 &1391959845
+--- !u!1001 &1303351588
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -562,6 +562,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2150686539454318172, guid: 36c976072b00be640aa1afee51957d05, type: 3}
+      propertyPath: baseStat.jumpPower
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 3103593138134460291, guid: 36c976072b00be640aa1afee51957d05, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1061,4 +1065,4 @@ SceneRoots:
   - {fileID: 1988739794}
   - {fileID: 706206699}
   - {fileID: 647392423}
-  - {fileID: 1391959845}
+  - {fileID: 1303351588}

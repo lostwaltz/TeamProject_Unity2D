@@ -7,7 +7,6 @@ public class MonsterFireBall : Balls
     [SerializeField] GameObject[] monsterPrefabs;
 
     Collider2D collider;
-    HealthSystem healthSystem;
 
     private void Awake()
     {
