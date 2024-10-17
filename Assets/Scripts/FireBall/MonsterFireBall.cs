@@ -17,9 +17,10 @@ public class MonsterFireBall : Balls
 
     protected override void OnTriggerEffect(Collider2D collision)
     {
-        Vector3 collisionPoint = collision.transform.position;
-
+        Vector3 collisionPoint = new Vector3 (gameObject.transform.position.x, collision.transform.position.y, collision.transform.position.z);
+        
         int randomMonster = Random.Range(0, monsterPrefabs.Length);
-        Instantiate(monsterPrefabs[randomMonster], collisionPoint, Quaternion.identity);
+        Instantiate(monsterPrefabs[randomMonster], collisionPoint,Quaternion.identity);
+        Debug.LogError(collisionPoint);
     }
 }

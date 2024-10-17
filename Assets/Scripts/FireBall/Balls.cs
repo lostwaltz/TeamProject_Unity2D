@@ -7,7 +7,6 @@ public abstract class Balls : MonoBehaviour
 {
     //특수 불꽃의 몬스터 소환 
     private bool isDestroy = false;
-
     Animator animator;
     Rigidbody2D rgbd;
     HealthSystem healthSystem;
@@ -16,7 +15,7 @@ public abstract class Balls : MonoBehaviour
     {
         animator = GetComponentInChildren<Animator>();
         rgbd = GetComponent<Rigidbody2D>();
-        healthSystem = GetComponent<HealthSystem>();
+        healthSystem = GetComponent<HealthSystem>();    
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
