@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
+    public static LevelManager Instance;
+
     [SerializeField] private GameObject fireBall;
     [SerializeField] private GameObject smallFireBall;
     [SerializeField] private GameObject monsterFireBall;
@@ -12,11 +14,24 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private float smallFireBall_Speed = 0.05f;
     [SerializeField] private float monsterFireBall_Speed = 1f;
 
+    private float smallFireBall_Spawn_Speed = 1f;
+    private float fireball_Spewn_Speed = 0.8f;
+    private float monsterFireBall_Spewn_Spawn_Speed = 0.5f;
+
     private bool isEasy = true;
     private bool isNormal = false;
     private bool isHard = false;
 
     private float time = 0;
+
+    private void Awake()
+    {
+        if(Instance == null)
+        {
+            Instance = this;
+        }
+       
+    }
 
     void Start()
     {
@@ -31,7 +46,8 @@ public class LevelManager : MonoBehaviour
     {
         if (isEasy)
         {
-            StartCoroutine(EasyLevel());
+            StartCoroutine(SpawnSmallFireBall());
+            StartCoroutine(SpawnFireBall());
         }
         else if (isNormal)
         {
@@ -70,18 +86,37 @@ public class LevelManager : MonoBehaviour
         go.transform.position += Vector3.down * monsterFireBall_Speed;
     }
 
-    IEnumerator EasyLevel()
+    //IEnumerator EasyLevel()
+    //{
+    //    while (isEasy)
+    //    {
+    //        time += 1;
+    //        MakeSmallFireBall();
+    //        Debug.Log(time);
+    //        if (time > 10)
+    //        {
+    //            MakeFireBall();
+    //        }
+    //        yield return new WaitForSeconds(1f);
+    //    }
+    //}
+
+    IEnumerator SpawnSmallFireBall()
     {
-        while (isEasy)
+        while(isEasy)
         {
             time += 1;
             MakeSmallFireBall();
-            Debug.Log(time);
-            if (time > 10)
-            {
-                MakeFireBall();
-            }
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(smallFireBall_Spawn_Speed);
+        }
+    }
+
+    IEnumerator SpawnFireBall()
+    {
+        while (time > 10)
+        {
+            MakeFireBall();
+            yield return new WaitForSeconds(fireball_Spewn_Speed);
         }
     }
 }
