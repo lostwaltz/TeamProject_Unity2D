@@ -2,13 +2,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Photon.Pun;
 
 public class SideViewMovement : MonoBehaviour
 {
-    private PhotonView photonView;
-
-
     private Vector2 direction = Vector2.zero;
 
     private SideVeiwController controller;
@@ -16,6 +12,8 @@ public class SideViewMovement : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private CharacterStatsHandler statHandler;
     private HealthSystem healthSystem;
+
+    private bool isGround = true;
 
     private float statSpeed => statHandler.CurrentStat.speed;
 
@@ -26,15 +24,12 @@ public class SideViewMovement : MonoBehaviour
         spriteRenderer = gameObject.GetComponentInChildren<SpriteRenderer>();
         statHandler =  GetComponent<CharacterStatsHandler>();
         healthSystem = GetComponent<HealthSystem>();
-        photonView = GetComponent<PhotonView>();
     }
 
     private void Start()
     {
-        if (!photonView.IsMine)
-            return;
-
         controller.OnMoveEvent += Move;
+        controller.OnJumpEvent += Jump;
     }
 
     private void FixedUpdate()
@@ -44,7 +39,9 @@ public class SideViewMovement : MonoBehaviour
 
     private void ApplyDirectionMove()
     {
-        movementRigidbody2D.velocity = direction * statSpeed * (healthSystem.IsAttacked ? 0 : 1);
+        Vector2 currentVelocity = movementRigidbody2D.velocity;
+        currentVelocity.x = (direction * statSpeed * (healthSystem.IsAttacked ? 0 : 1)).x;
+        movementRigidbody2D.velocity = currentVelocity;
     }
 
     private void Move(Vector2 _direction)
@@ -53,14 +50,27 @@ public class SideViewMovement : MonoBehaviour
 
         bool isFilpX = controller.direction.x < 0;
 
-        photonView.RPC("FlipXRPC", RpcTarget.All, isFilpX); 
+        spriteRenderer.flipX = isFilpX;
     }
 
-    [PunRPC]
-    private void FlipXRPC(bool isFlipX)
+    private void Jump()
     {
-        spriteRenderer.flipX = isFlipX;
+        if (false == isGround)
+            return;
 
-        Debug.Log(controller.direction.x < 0);
+        movementRigidbody2D.AddForce(Vector2.up * statHandler.CurrentStat.jumpPower, ForceMode2D.Impulse);
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+            isGround = true;
+    }
+
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+            isGround = false;
     }
 }
