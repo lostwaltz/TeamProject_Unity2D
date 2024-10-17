@@ -159,7 +159,6 @@ public class LevelManager : MonoBehaviour
             {
                 MakeSmallFireBall();
                 MakeFireBall();
-                MakeMonsterFireBall();
             }
 
             if (time > Second_LevelUp_Time)
