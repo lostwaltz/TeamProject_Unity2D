@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-public class GamaManager : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
     [SerializeField] private GameObject easyBG;
     [SerializeField] private GameObject normalBG;
