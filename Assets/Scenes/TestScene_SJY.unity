@@ -149,14 +149,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1352987499}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b891bbe130b4ed5439c9ddc0199fc475, type: 3}
+  m_Script: {fileID: 11500000, guid: 06e4fb582defe9a4089360e5e5480a7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fireBall: {fileID: 4088571098289878915, guid: 3a2fea0ddb510ee4e8e55e8df02e3d35, type: 3}
   smallFireBall: {fileID: 1552661078702467686, guid: 2e92d36a30ebe274895f54c1e66c13b5, type: 3}
   monsterFireBall: {fileID: 75425812310198850, guid: 5c29e28ffce41c04ab0ddef6f421f8a5, type: 3}
-  fireBall_Speed: 0.05
-  smallFireBall_Speed: 0.1
+  fireBall_Speed: 0.1
+  smallFireBall_Speed: 0.05
   monsterFireBall_Speed: 1
 --- !u!4 &1352987501
 Transform:

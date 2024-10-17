@@ -120,9 +120,9 @@ GameObject:
   - component: {fileID: 2309269925341521656}
   - component: {fileID: -3991127483057183318}
   - component: {fileID: 8854049321375331638}
-  - component: {fileID: 5786905996078150279}
   - component: {fileID: 7047087580266613413}
   - component: {fileID: 8346350077152219921}
+  - component: {fileID: 7438352033058018857}
   m_Layer: 6
   m_Name: PlayerOrigin
   m_TagString: MainCamera
@@ -257,7 +257,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3331206790436552643}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aef429da143e45b47b691ca8f652cfc6, type: 3}
+  m_Script: {fileID: 11500000, guid: 1daa61c6c05c4484ca5d6545d874d3b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &8854049321375331638
@@ -273,18 +273,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthChangeDelay: 0.5
---- !u!114 &5786905996078150279
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3331206790436552643}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f8ad99db1041a84397bef80e0c9e7ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &7047087580266613413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -314,3 +302,15 @@ MonoBehaviour:
     maxHealth: 3
     speed: 1
   statModifiers: []
+--- !u!114 &7438352033058018857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3331206790436552643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f16de3e6327b2b41ba3f83dd34e5a78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
