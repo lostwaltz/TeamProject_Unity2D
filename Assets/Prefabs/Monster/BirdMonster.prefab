@@ -138,10 +138,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7664814198424431288}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d31aa16aadbca947b19726f7de7e094, type: 3}
+  m_Script: {fileID: 11500000, guid: 1a1affafef48c7e42bd5e44bbdf09281, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MonsterSpeed: 0.5
+  MonsterSpeed: 0
 --- !u!1 &8580865323786286148
 GameObject:
   m_ObjectHideFlags: 0

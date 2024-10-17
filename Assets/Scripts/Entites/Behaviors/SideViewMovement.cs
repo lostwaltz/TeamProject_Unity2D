@@ -8,6 +8,8 @@ public class SideViewMovement : MonoBehaviour
     private Vector2 direction = Vector2.zero;
 
     private SideVeiwController controller;
+    private CollidingPlayerEventController collidingPlayerEventController;
+
     private Rigidbody2D movementRigidbody2D;
     private SpriteRenderer spriteRenderer;
     private CharacterStatsHandler statHandler;
@@ -24,12 +26,14 @@ public class SideViewMovement : MonoBehaviour
         spriteRenderer = gameObject.GetComponentInChildren<SpriteRenderer>();
         statHandler =  GetComponent<CharacterStatsHandler>();
         healthSystem = GetComponent<HealthSystem>();
+        collidingPlayerEventController = GetComponent<CollidingPlayerEventController>();
     }
 
     private void Start()
     {
         controller.OnMoveEvent += Move;
         controller.OnJumpEvent += Jump;
+        collidingPlayerEventController.OnTapMonsterJumpEvent += DoubleJump;
     }
 
     private void FixedUpdate()
@@ -59,6 +63,19 @@ public class SideViewMovement : MonoBehaviour
             return;
 
         movementRigidbody2D.AddForce(Vector2.up * statHandler.CurrentStat.jumpPower, ForceMode2D.Impulse);
+
+        Debug.Log(movementRigidbody2D.velocity);
+    }
+    private void DoubleJump()
+    {
+        Vector2 currentVelocity = movementRigidbody2D.velocity;
+        currentVelocity.y = 0f;
+
+        movementRigidbody2D.velocity = currentVelocity;
+
+        movementRigidbody2D.AddForce(Vector2.up * (statHandler.CurrentStat.jumpPower * 0.8f), ForceMode2D.Impulse);
+
+        Debug.Log(movementRigidbody2D.velocity);
     }
 
     private void OnCollisionStay2D(Collision2D collision)
