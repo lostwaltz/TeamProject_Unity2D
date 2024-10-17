@@ -22,6 +22,7 @@ public class LevelManager : MonoBehaviour
     private bool isNormal = false;
     private bool isHard = false;
 
+    private float levelUp_Time = 10f;
     private float time = 0;
 
     private void Awake()
@@ -40,6 +41,11 @@ public class LevelManager : MonoBehaviour
         //InvokeRepeating("MakeFireBall", 0.5f, 1f);
         //InvokeRepeating("MakeSmallFireBall", 0.5f, 1f);
         //InvokeRepeating("MakeMonsterFireBall", 0.5f, 1f);
+    }
+
+    private void Update()
+    {
+        time += Time.deltaTime;
     }
 
     private void LevelFireSpawn()
@@ -89,12 +95,20 @@ public class LevelManager : MonoBehaviour
     {
         while (isEasy)
         {
-            time += 1;
             MakeSmallFireBall();
             Debug.Log(time);
-            if (time > 10)
+            if (time > levelUp_Time)
             {
+                MakeSmallFireBall();
                 MakeFireBall();
+            }
+
+            if (time > 15)
+            {
+                MakeSmallFireBall();
+                MakeFireBall();
+                smallFireBall_Spawn_Speed = smallFireBall_Spawn_Speed / 2f;
+                time = 0;
             }
             yield return new WaitForSeconds(smallFireBall_Spawn_Speed);
         }
